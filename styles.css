@@ -1,0 +1,45 @@
+html {
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+}
+
+body {
+    width: 100%;
+    height: 200%;
+    margin: auto;
+    background-image: url(images/dataslateTerminal.jpg);
+    background-repeat: no-repeat;
+    background-size: 60% 100%;
+    margin-left: 20%;
+    position: absolute;
+}
+
+div.bannerTop {
+    height: 490px;
+    width: 49.55%;
+    margin-left: 112px;
+    background-color: white;
+    position: relative;
+    top: 72px;
+
+}
+
+div.mainContent {
+    height: 938px;
+    width: 49.55%;
+    margin-left: 112px;
+    background-color: black;
+    position: relative;
+    top: 80px;
+    overflow: auto;
+}
+
+div.bannerBottom {
+    height: 70px;
+    width: 49.55%;
+    margin-left: 112px;
+    background-color: rgb(238, 213, 213);
+    position: absolute;
+    top: 1530px;
+
+}
