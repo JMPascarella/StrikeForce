@@ -12,13 +12,14 @@ body {
     background-size: 60% 100%;
     margin-left: 20%;
     position: absolute;
+    color: rgb(65, 255, 0);
+    font-size: 1.2em;
 }
 
 div.bannerTop {
     height: 490px;
     width: 49.55%;
     margin-left: 112px;
-    background-color: white;
     position: relative;
     top: 72px;
 
@@ -28,17 +29,32 @@ div.mainContent {
     height: 938px;
     width: 49.55%;
     margin-left: 112px;
-    background-color: black;
+    padding-right: 10px;
     position: relative;
     top: 80px;
     overflow: auto;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column;  
+    -webkit-flex-flow: column,
+}
+
+figcaption {
+    font-size: 1.3em;
+}
+
+
+div.unitFlexBox {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row;
+    -webkit-flex-flow: row;
 }
 
 div.bannerBottom {
     height: 70px;
     width: 49.55%;
     margin-left: 112px;
-    background-color: rgb(238, 213, 213);
     position: absolute;
     top: 1530px;
 
