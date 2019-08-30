@@ -25,11 +25,49 @@ div.bannerTop {
 
 }
 
+div.bannerTop ul, div.bannerTop a {
+    text-decoration: none;
+    color: red;
+    text-shadow: 2px 2px 8px black;
+    font-weight: bolder;
+    list-style: none;
+    top: 225px;   
+    position: relative;
+}
+
+div.bannerTop a:hover {
+    text-shadow: 2px 2px 8px black;
+    color: gold;
+    transition: 2s;
+}
+
+div.bannerTop a {
+    font-size: 1.1em;
+    padding-left: 11px;
+    
+}
+
+div.campaignBadge > img {
+    position: absolute;
+    left: 45px;
+    top: 45px;
+    width: 350px;
+    height: 350px;
+    border-radius: 35px;
+}
+
+div.campaignDesc {
+    position: absolute;
+    left: 415px;
+    top: 115px;
+}
+
 div.mainContent {
-    height: 938px;
+    height: 930px;
     width: 49.55%;
     margin-left: 112px;
     padding-right: 10px;
+    margin-top: 8px;
     position: relative;
     top: 80px;
     overflow: auto;
@@ -39,10 +77,13 @@ div.mainContent {
     -webkit-flex-flow: column,
 }
 
+div.unitFlexBox > figure > img {
+    border-radius: 35px;
+}
+
 figcaption {
     font-size: 1.3em;
 }
-
 
 div.unitFlexBox {
     display: flex;
@@ -51,11 +92,35 @@ div.unitFlexBox {
     -webkit-flex-flow: row;
 }
 
+div.battleStatistics {
+    column-count: 2;
+    margin-left: 25%;
+}
+
 div.bannerBottom {
     height: 70px;
     width: 49.55%;
     margin-left: 112px;
     position: absolute;
     top: 1530px;
+}
 
+div.bannerBottom ul, div.bannerBottom a {
+    text-decoration: none;
+    color: red;
+    text-shadow: 2px 2px 8px black;
+    font-weight: bolder;
+    list-style: none;
+}
+
+div.bannerBottom a:hover {
+    text-shadow: 2px 2px 8px black;
+    color: gold;
+    transition: 2s;
+}
+
+div.bannerBottom a {
+    font-size: 1.1em;
+    padding-left: 20px;
+    padding-right: 20px;
 }
