@@ -14,6 +14,7 @@ body {
     position: absolute;
     color: rgb(65, 255, 0);
     font-size: 1.2em;
+    overflow-x: hidden;
 }
 
 div.bannerTop {
@@ -22,7 +23,6 @@ div.bannerTop {
     margin-left: 112px;
     position: relative;
     top: 72px;
-
 }
 
 div.bannerTop ul, div.bannerTop a {
@@ -44,15 +44,17 @@ div.bannerTop a:hover {
 div.bannerTop a {
     font-size: 1.1em;
     padding-left: 11px;
-    
 }
 
-div.campaignBadge > img {
+div.campaignBadge > a  {
     position: absolute;
     left: 45px;
     top: 45px;
     width: 350px;
     height: 350px;
+}
+
+div.campaignBadge img {
     border-radius: 35px;
 }
 
@@ -70,15 +72,62 @@ div.mainContent {
     margin-top: 8px;
     position: relative;
     top: 80px;
-    overflow: auto;
+    overflow-x: hidden;
     display: flex;
     display: -webkit-flex;
     flex-flow: column;  
     -webkit-flex-flow: column,
 }
 
+div.strikeForceShip {
+    margin-left: 15px;
+    margin-top: 15px;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+}
+
+div.shipImage {
+   flex: 2 1 150px;
+}
+
+div.shipDescription {
+    flex: 1 1 150px;
+}
+
+div.batrepFlexBox {
+    column-count: 2;
+    margin-left: 15px;
+}
+
+div.batrepPhoto {
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+div.batrepDescription {
+    float: right;
+}
+
+img.batRep {
+    border: 1px solid #ddd; 
+    border-radius: 4px;  
+    padding: 5px; 
+    width: 300px; 
+    margin-bottom: 15px;
+}
+
+img.batRep:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
 div.unitFlexBox > figure > img {
     border-radius: 35px;
+}
+
+button {
+    margin-right: 35px;
 }
 
 figcaption {
@@ -102,7 +151,7 @@ div.bannerBottom {
     width: 49.55%;
     margin-left: 112px;
     position: absolute;
-    top: 1530px;
+    top: 1560px;
 }
 
 div.bannerBottom ul, div.bannerBottom a {

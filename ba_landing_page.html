@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wings of the Archangel</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
-
 <body>
     <div class="bannerTop">
         <div class="campaignBadge">
-            <img src="images/BA_Icon.jpg" />
+            <a href="ba_landing_page.html">
+                <img src="images/BA_Icon.jpg" width="316px" height="316px" />
+            </a>
         </div>
         <div class="campaignDesc">
             <p>Blood Angel's <br>Inquisitorial Campaign <br>Badge</p>
@@ -30,26 +31,35 @@
     </div>
     <!--End of bannerTop-->
     <div class="mainContent">
-        <div class="strikeForceShip" id="igBattleBarge">
-            <div class="shipImage"></div>
-            <h1 class="shipName">Divinitatem Sublimius</h1>
-            <div class="shipDescription"></div>
+        <div class="strikeForceShip" id="BA_StrikeCruiser">
+            <div class="shipImage">
+                <img src="images/StrikeCruiser.JPG" alt="Divinitatem Sublimius" height="260px" width="560px">
+            </div>
+            <h1 class="shipName">Space Marine Strike Cruiser,<br> <em>Divinitatem Sublimius</em></h1>
+            <div class="shipDescription">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero est amet provident doloremque accusamus sed autem ut accusantium laboriosam. Mollitia quia, ipsam et sequi ratione perferendis in modi voluptates obcaecati.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae illum quia natus dolorem? Possimus exercitationem omnis a accusantium obcaecati! Qui distinctio deleniti, esse libero cumque natus perferendis ipsa. Exercitationem, et?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis soluta nemo consectetur voluptas ullam in itaque quasi, optio, earum alias autem beatae repudiandae laboriosam labore et quod voluptate amet dolorem</p>
+            </div>
         </div>
+        <hr width="940px">
         <div class="batrepFlexBox" id="batrepOne">
-            <div class="batrepPhoto"></div>
-            <div class="batrepDescription"></div>
-        </div>
-        <div class="batrepFlexBox" id="batrepTwo">
-            <div class="batrepPhoto"></div>
-            <div class="batrepDescription"></div>
-        </div>
-        <div class="batrepFlexBox" id="batrepThree">
-            <div class="batrepPhoto"></div>
-            <div class="batrepDescription"></div>
+            <div class="batrepPhoto">
+                <a target="_blank" href="images/batRepSept01/001.JPG" id="B" class="batRepPhoto">
+                    <img class="batRep" id="A" src="images/batRepSept01/001.JPG" />
+                </a>
+                <button onclick="photoChange()">Next Photo</button>
+            </div> 
+            <div class="batrepDescription">
+                <h2>Blood Angels vs. Death Guard</h2>
+                <h3>2,000 Points</h3>
+                <h3>Visions of Victory (CA18)</h3>
+                <h3>Loss; concede</h3>
+                <p>Arriving at their shared destination ahead of the rest of the detachment, the Blood Angels deployed upon Planet Kraxxus, holding much of their force in Deep Strike reserve. This proved to be a mortal mistake as initial auspex scans showed the chosen deployment zone to be largely vacant of the defending Death Guard forces but in reality they were shrouded by the combined forces of two daemon princes with a corrupted Imperial Knight for support. By the time deep strike forces arrived upon the battlefield, the initial landing force had been largely destroyed. After a few more fatal blows dealt to the Wings of the Archangel, the Archangel himself, First Captain Karlaen, ordered a full retreat back to the <em>Divinitatem Sublimius</em>. Covering their retreat, Brother Librarian Loredon, entombed within his dreadnought, was able to single-handedly slay one of the two commanding daemon princes. As per First Captain Karlaen, chapter serfs are being dispatched to Brother Librarian Loredon to record this heroic deed on his chassis and telepathic communication has been dispatched to Baal to update the Hall of Rememberance as well. </p> 
+            </div>
         </div>
     </div>
     <!--End of mainContent-->
-    
     <div class="bannerBottom">
         <nav>
             <ul>
@@ -63,7 +73,5 @@
         </nav>
     </div>
     <!--End of bannerBottom-->
-    
 </body>
-
 </html>
